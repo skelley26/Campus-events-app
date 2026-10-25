@@ -6,7 +6,7 @@ from scraper import eventsScraper
 
 project_dir = Path(__file__).resolve().parents[1]
 db_path = project_dir / "dbs" / "events.db"
-json_path = project_dir / "html" / "events.json"
+json_path = project_dir / "docs" / "events.json"
 
 
 def main():
