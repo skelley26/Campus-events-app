@@ -1,4 +1,9 @@
 <!doctype html>
+<!--
+   @license
+   Copyright 2023 Google LLC. All Rights Reserved.
+   SPDX-License-Identifier: Apache-2.0
+  -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -55,16 +60,20 @@
         </div>
         </nav>
         <!-- main events -->
-        <section>
-            <h1>Campus Events</h1>
-            <ul id="events-list">
-                <li>Loading events...</li>
-            </ul>
-        </section>
-        <script src="./events.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+         <div class="row container-fluid" id="container">
+            <section class="col">
+                <h1>Campus Events</h1>
+                <ul id="events-list">
+                    <li>Loading events...</li>
+                </ul>
+            </section>
         
+            <div class="col">
+                <!-- <img class="mainpageimg" src="../images/unnamed.webp" width="200" height="250" alt="Picture of mount mary during golden hour."> -->
+            </div>
+        </div>
 
+        <!--Start carousel-->
         <section class="container my-5" aria-label="Other Resources">
             <div id="resourceCarousel" class="carousel slide resource-carousel" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-indicators">
@@ -80,7 +89,7 @@
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVaYUnYBZdlL6Srg1z-YHgt8e1rJovG0KjnTGVwxyx_w&s" width="500" height="300" class="card-img-top" alt="Mount Mary University building with vibrant fall leaves.">
                                 <div class="card-body">
                                     <h5 class="card-title">MMU Insta</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Keep up with all the cool happenings on campus by following MMU on Instagram!</p>
                                     <a href="#" class="btn btn-primary">Follow us</a>
                                 </div>
                             </div>
@@ -92,7 +101,7 @@
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsCMBvRIhiAmQYVZcTP_s8JZQ6PLyGTeJV2mQ7OgNVPdnMp6Y5nSJD1i0&s=10" width="500" height="300" class="card-img-top" alt="Logo for the App Zeemee.">
                                 <div class="card-body">
                                     <h5 class="card-title">ZeeMee</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Find friends on campus with the same interests as you with Zeemee!</p>
                                     <a href="https://colleges.zeemee.com/colleges/mtmary/admitted" class="btn btn-primary">Find a friend</a>
                                 </div>
                             </div>
@@ -101,11 +110,11 @@
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
                             <div class="card" style="width: 20rem;">
-                                <img src="" width="500" height="300" class="card-img-top" alt="">
+                                <img src="https://framerusercontent.com/images/y7e7dk4y4QJvVWZiWtBoA1xyU.png?width=1021&height=928" width="500" height="300" class="card-img-top" alt="Two phones showing an example of a partiful invite.">
                                 <div class="card-body">
-                                    <h5 class="card-title">Placeholder</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                    <a href="https://colleges.zeemee.com/colleges/mtmary/admitted" class="btn btn-primary">button</a>
+                                    <h5 class="card-title">Partiful</h5>
+                                    <p class="card-text">Create your own event and send a customized invite to your friends and family.</p>
+                                    <a href="https://partiful.com/" class="btn btn-primary">Create an Event</a>
                                 </div>
                             </div>
                         </div>
@@ -113,11 +122,11 @@
                      <div class="carousel-item">
                         <div class="d-flex justify-content-center">
                             <div class="card" style="width: 20rem;">
-                                <img src="" width="500" height="300" class="card-img-top" alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvI45du0-xVHSx8J_pIAARp6PKy6kURi1_2_gwlYicZfW_Ls2qAR1bk5o&s=10" width="500" height="300" class="card-img-top" alt="A clip art picture of a counselor talking to a client.">
                                 <div class="card-body">
-                                    <h5 class="card-title">Placeholder</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                    <a href="https://colleges.zeemee.com/colleges/mtmary/admitted" class="btn btn-primary">button</a>
+                                    <h5 class="card-title">You Matter</h5>
+                                    <p class="card-text">Feeling down and need someone to talk to? The Counseling and Wellness Center is here for you.</p>
+                                    <a href="https://mtmary.edu/student-experience/campus-resources/counseling-and-wellness-center.html" class="btn btn-primary">Chat with a Counselor</a>
                                 </div>
                             </div>
                         </div>
@@ -133,6 +142,13 @@
                 </button>
             </div>
         </section>
+    
+        <div class="text-center">
+            <h1>Campus Map:</h1>
+            <iframe width="800" height="600" class="rounded" src="https://www.openstreetmap.org/export/embed?bbox=-88.03683757781984%2C43.069389389453015%2C-88.02718162536623%2C43.07547114811726&amp;layer=mapnik&amp;marker=43.07243034422523%2C-88.03200960159302" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.072430&amp;mlon=-88.032010#map=17/43.072430/-88.032010">View Larger Map</a></small>
+        </div>
+        <script src="./events.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     </body>
 </html>

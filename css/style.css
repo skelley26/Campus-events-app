@@ -12,8 +12,8 @@
 
 body {
   font-family: "Fuzzy Bubbles", sans-serif;
-  background-color: red;
-  background-image: linear-gradient(rgb(0, 140, 255), rgb(233, 100, 23), red);
+  
+  background-image: url(../images/unnamed.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -25,6 +25,7 @@ head {
 
 h1 {
   padding-top: 5rem;
+  padding-left: 2rem;
 }
 
 .navbar {
@@ -37,4 +38,17 @@ h1 {
 
 .resource-carousel .carousel-indicators {
   margin-bottom: 0;
+}
+
+.mainpageimg {
+  padding-top: 5rem;
+}
+
+#container {
+  background-color: darkslategrey;
+  border-radius: 25px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
