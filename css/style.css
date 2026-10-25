@@ -30,3 +30,11 @@ h1 {
 .navbar {
   background-color: cadetblue;
 }
+
+.resource-carousel {
+  padding-bottom: 2rem;
+}
+
+.resource-carousel .carousel-indicators {
+  margin-bottom: 0;
+}
