@@ -12,11 +12,11 @@
 
 body {
   font-family: "Fuzzy Bubbles", sans-serif;
-  
-  background-image: url(../images/unnamed.webp);
+  background-color: rgb(245, 244, 235);
+  background-image: linear-gradient(rgb(0, 140, 255), rgb(210, 212, 190), rgb(245, 244, 235));
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: fill;
 }
 
 head {
@@ -44,11 +44,91 @@ h1 {
   padding-top: 5rem;
 }
 
-#container {
+/* .containerbackground {
   background-color: darkslategrey;
   border-radius: 25px;
   padding-bottom: 5px;
   padding-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
+}  */
+ 
+.events {
+  background-color: darkslategrey;
+  border-radius: 25px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.events-section {
+  margin-top: 7rem !important;
+  padding: 1.5rem;
+  color: #173b3d;
+  background-color: rgba(219, 218, 202, 0.95);
+  border-radius: 1.25rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.events-section h1 {
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-card {
+  padding: 1.25rem;
+  background-color: #e8f3f2;
+  border-left: 0.35rem solid #2a7f80;
+  border-radius: 1rem;
+}
+
+.event-card:nth-child(even) {
+  background-color: #f1edf7;
+  border-left-color: #8064a2;
+}
+
+.event-card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.event-card-detail {
+  margin-bottom: 0.35rem;
+}
+
+.event-card-detail:last-child {
+  margin-bottom: 0;
+}
+
+#sky-report {
+  background-color: rgba(219, 218, 202, 0.95);
+}
+
+.horoscope-widget-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.horoscope-widget {
+  width: 100%;
+}
+
+.horoscope-widget iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0 auto;
 }

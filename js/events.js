@@ -12,7 +12,21 @@ fetch("./events.json")
 
     for (const event of events) {
       const item = document.createElement("li");
-      item.textContent = `${event.title} - ${event.date} @ ${event.location}`;
+      item.className = "event-card";
+
+      const title = document.createElement("h2");
+      title.className = "event-card-title";
+      title.textContent = event.title;
+
+      const date = document.createElement("p");
+      date.className = "event-card-detail";
+      date.textContent = `Date: ${event.date}`;
+
+      const location = document.createElement("p");
+      location.className = "event-card-detail";
+      location.textContent = `Location: ${event.location}`;
+
+      item.append(title, date, location);
       list.append(item);
     }
   })
